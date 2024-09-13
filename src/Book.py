@@ -34,4 +34,4 @@ class Book:
         return f"ISBN: {self.__isbn}, Title: {self.__title}, Author: {self.__author}"
 
     def __eq__(self, other: object) -> bool:
-            return self.__isbn == other.__isbn
+            return self.__isbn == other.get_isbn()
